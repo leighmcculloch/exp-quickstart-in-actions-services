@@ -15,7 +15,7 @@ jobs:
         - 8000:8000
         env:
           ENABLE_LOGS: true
-          NETWORK: local
+          # NETWORK: local
           ENABLE_SOROBAN_RPC: true
         options: >-
           --health-cmd "curl --no-progress-meter --fail-with-body -X GET 'http://localhost:8000'"
