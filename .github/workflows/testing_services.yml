@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-22.04
     services:
       rpc:
-        image: stellar/quickstart:testing
+        image: stellar/quickstart:pr-540-testing-amd64
         ports:
         - 8000:8000
         env:
-          # ENABLE_LOGS: true
+          ENABLE_LOGS: true
           NETWORK: local
           ENABLE_SOROBAN_RPC: true
         options: >-
