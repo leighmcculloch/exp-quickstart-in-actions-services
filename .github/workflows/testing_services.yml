@@ -14,7 +14,7 @@ jobs:
         ports:
         - 8000:8000
         env:
-          # ENABLE_LOGS: true
+          ENABLE_LOGS: true
           NETWORK: local
           ENABLE_SOROBAN_RPC: true
         options: >-
